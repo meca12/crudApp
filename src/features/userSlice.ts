@@ -32,6 +32,14 @@ export const fetchUsers = createAsyncThunk('users/fetchUsers', async () => {
   const response = await axios.get(API_URL, { headers: { Authorization: `Bearer ${AUTH_TOKEN}` } });
   return response.data;
 });
+// get user para   actualizar  
+ 
+export const getUserfor = createAsyncThunk('users/fetchUsers', async (id: number) => {
+  const response = await axios.get(`${API_URL}/${id}`, {
+    headers: { Authorization: `Bearer ${AUTH_TOKEN}` },
+  });
+   return response.data;
+});
 
 
 export const addUser = createAsyncThunk('users/addUser', async (user: Omit<User, 'id'>) => {

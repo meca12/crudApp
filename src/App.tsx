@@ -3,7 +3,6 @@ import './App.css'
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 
 import { AddNewuser } from './assets/pages/addNewuser.tsx';
-import { UserDetails } from './assets/pages/userDetail.tsx';
 import { UserList } from './assets/pages/userList.tsx';
 
 function App() {
@@ -17,10 +16,8 @@ function App() {
     <Router>
         <Routes>
         <Route path="/" element={<UserList/>}/>
-        <Route path="/users/:id" element={<UserDetails/>}/>
         <Route path="/users/new" element={<AddNewuser/>}/>
-        
-        </Routes>
+  </Routes>
     </Router>
   
   )

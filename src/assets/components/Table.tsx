@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FormEdit } from './formEdituser.tsx';
 import React from "react";
 import { UserModel } from "../utils/userInterface";
 import { far } from '@fortawesome/free-regular-svg-icons';
@@ -22,7 +23,7 @@ const DataTable:React.FC<DataTableProps> = ({ user }) => {
                         <td className="py-2 px-4 border-b border-gray-200">{user.email}</td>
                         <td className="py-2 px-4 border-b border-gray-200">{user.gender}</td>
                         <td className="py-2 px-4 border-b border-gray-200">{user.status}</td>
-            <td className="py-2 px-4 border-b border-gray-200"><FontAwesomeIcon icon="fa-solid fa-pencil" /> <FontAwesomeIcon icon="fa-solid fa-trash" /><FontAwesomeIcon icon="fa-solid fa-user" /></td>
+            <td className="py-2 px-4 border-b border-gray-200"><FormEdit userId={user.id}/> <FontAwesomeIcon icon="fa-solid fa-trash" /><FontAwesomeIcon icon="fa-solid fa-user" /></td>
                         
           </tr>
        

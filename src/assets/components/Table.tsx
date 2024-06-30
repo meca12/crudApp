@@ -1,3 +1,4 @@
+import { DetailsUser } from './DetailsUser.tsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FormEdit } from './formEdituser.tsx';
 import React from "react";
@@ -23,7 +24,7 @@ const DataTable:React.FC<DataTableProps> = ({ user }) => {
                         <td className="py-2 px-4 border-b border-gray-200">{user.email}</td>
                         <td className="py-2 px-4 border-b border-gray-200">{user.gender}</td>
                         <td className="py-2 px-4 border-b border-gray-200">{user.status}</td>
-            <td className="py-2 px-4 border-b border-gray-200"><FormEdit userId={user.id}/> <FontAwesomeIcon icon="fa-solid fa-trash" /><FontAwesomeIcon icon="fa-solid fa-user" /></td>
+            <td className="py-2 px-4 border-b border-gray-200"><FormEdit userId={user.id} /><DetailsUser userId={user.id}/><FontAwesomeIcon icon="fa-solid fa-trash" /></td>
                         
           </tr>
        

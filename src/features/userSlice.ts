@@ -6,7 +6,7 @@ const API_URL = 'https://gorest.co.in/public/v2/users';
 const AUTH_TOKEN = 'b405d4259a0ba0a6798c75d61d6f1be14268152b8c09acdec5c89af9bd789653';
 
 // Define la interfaz User con los objetos de la data
-interface User {
+export interface User {
   id: number;
   name: string;
   email: string;
@@ -19,12 +19,14 @@ interface UserState {
   users: User[];
   loading: boolean;
   error: string | null;
+   currentUser: User | null;
 }
 
 const initialState: UserState = {
   users: [],
   loading: false,
   error: null,
+  currentUser: null,
 };
 
 // Thunks para operaciones asincrónicas

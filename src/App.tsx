@@ -2,8 +2,9 @@ import './App.css'
 
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 
-import { AddNewuser } from './assets/pages/addNewuser.tsx';
-import { UserList } from './assets/pages/userList.tsx';
+import { DetailsUser } from './assets/pages/DetailsUser.tsx';
+import { EditUser } from './assets/pages/EditUser.tsx';
+import { UserList } from './assets/pages/index.tsx';
 
 function App() {
 
@@ -15,8 +16,10 @@ function App() {
 
     <Router>
         <Routes>
-        <Route path="/" element={<UserList/>}/>
-        <Route path="/users/new" element={<AddNewuser/>}/>
+        <Route path="/" element={<UserList />} />
+        <Route path="/users/edit/:id" element={<EditUser />} />
+        <Route path="/users/:id" element={<DetailsUser />} />
+       
   </Routes>
     </Router>
   

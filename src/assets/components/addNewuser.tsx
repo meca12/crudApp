@@ -1,4 +1,4 @@
-import {FormNewUser} from "../components/formNewuser.tsx"
+import {FormNewUser} from "./formNewuser.tsx"
 import React from "react";
 
 const AddNewuser: React.FC = () => {

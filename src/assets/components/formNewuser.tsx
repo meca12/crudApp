@@ -68,7 +68,7 @@ return (
       
       <div>
       <button
-        className="px-4 py-2 font-semibold text-white bg-blue-500 rounded hover:bg-blue-700"
+        className="px-4 py-2 font-semibold text-sky-600 bg-white border rounded border-sky-600 hover:bg-sky-600 hover:text-white"
         onClick={handleClickOpen}
       >
       Agregar usuario 
@@ -86,7 +86,7 @@ return (
                   Nombre
                 </label>
                 <input
-                  className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                  className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-sky-500"
                   type="text"
                   id="name"
                 placeholder="Tu nombre"
@@ -98,7 +98,7 @@ return (
                   Email
                 </label>
                 <input
-                  className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                  className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-sky-500"
                   type="email"
                   id="email"
                 placeholder="Tu email"
@@ -110,7 +110,7 @@ return (
                   genero
                 </label>
                  <input
-                  className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                  className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-sky-500"
                   type="text"
                   id="gender"
                 placeholder="male or female"
@@ -123,7 +123,7 @@ return (
                   status
                 </label>
    <input
-                  className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-blue-500"
+                  className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-sky-500"
                   type="text"
                   id="status"
                 placeholder="active or inactive"
@@ -133,13 +133,13 @@ return (
               </div>
               <div className="flex justify-end">
                  <button onClick= {handleClose } type="button"
-                className="px-4 py-2 mr-2 text-gray-700 bg-gray-200 rounded hover:bg-gray-300">
+                className="px-4 py-2 mr-2 text-gray-50 bg-stone-900 rounded hover:bg-stone-800">
                   Cancelar
                 </button>
                 <button
                   
                   type="submit"
-                  className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-700">
+                  className="px-4 py-2 text-white bg-sky-600 rounded hover:bg-sky-500">
                   {loading ? 'Guardando...' : 'Guardar'}
               </button>
                
